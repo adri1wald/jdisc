@@ -11,7 +11,7 @@ struct JDiscCli {
 
 #[derive(Subcommand, Debug)]
 enum JDiscCommand {
-    // Discover the schema of a JSON file
+    /// Discover the schema of a JSON file
     Discover {
         /// The path to the input JSON file
         #[arg(short, long, value_name = "INPUT FILE")]
